@@ -1,0 +1,162 @@
+#######################
+### LAUNCH PROGRAMS ###
+#######################
+super + Return
+	alacritty
+
+super + shift + Return
+	alacritty --class 'Alacritty-float,Alacritty-float'
+
+super + e
+	thunar
+
+super + w
+	firefox
+
+super + d
+	rofi -show drun
+
+super + d
+	rofi -show drun
+
+super + v
+	code
+
+super + n
+	discord
+
+super + m
+	deezer-unofficial-player
+
+super + {_,shift + }q
+	bspc node -{c,k}
+
+super + Escape
+	pkill -USR1 -x sxhkd
+
+## reload desktop
+super + shift + r
+	bspc wm -r
+
+## prompt lockscreen, logout, reboot, and shutdown not working
+alt + F4
+	logoutmenu
+
+ctrl + alt + F4
+	shutdown now
+
+##---------- System ----------##
+
+# Take a screenshot
+Print
+	scrot 'Screenshot_%Y-%m-%d-%H-%M-%S.png' -e 'mv $f $$(xdg-user-dir PICTURES);' # ; viewnior $$(xdg-user-dir PICTURES)/$f'
+	
+# Take current window
+alt + Print	
+	scrot -u 'Screenshot_%Y-%m-%d-%H-%M-%S.png' -e 'mv $f $$(xdg-user-dir PICTURES);' #; viewnior $$(xdg-user-dir PICTURES)/$f'
+
+# Take window
+ctrl + Print	
+	scrot -s 'Screenshot_%Y-%m-%d-%H-%M-%S.png' -e 'mv $f $$(xdg-user-dir PICTURES);' #; viewnior $$(xdg-user-dir PICTURES)/$f'
+
+# Take a screenshot in 5 second
+shift + Print	
+	scrot -d 5 'Screenshot_%Y-%m-%d-%H-%M-%S.png' -e 'mv $f $$(xdg-user-dir PICTURES);' #; viewnior $$(xdg-user-dir PICTURES)/$f'
+	
+# Brighness control
+XF86MonBrightness{Up,Down}
+	backlight{-up,-down}
+	
+# Volume control
+XF86Audio{RaiseVolume,LowerVolume}
+	volume{-up,-down}
+
+XF86AudioMute
+	amixer set Master toggle
+	
+# Music control
+XF86Audio{Next,Prev,Play,Stop}
+	mpc {next,prev,toggle,stop}
+
+######################
+### WINDOW MANAGER ###
+######################
+## close or kill program
+super + {_,shift + }q
+    bspc node -{c,k}
+
+##  fullscreen program
+super + f
+    bspc node -t {fullscreen,tiled}
+
+## monocle layout
+super + shift + f
+	bspc desktop -l next
+
+# Reload Keybindings
+super + Escape
+	pkill -USR1 -x sxhkd
+
+# Split horizontal, vertical or cancel
+super + {h,v,b}
+	bspc node -p {east,south,cancel}
+
+# Preselect the ratio
+super + ctrl + shift + {1-9}
+	bspc node -o 0.{1-9}
+
+# Toggle beetwen floating & tiled
+super + space
+    bspc node -t "~"{floating,tiled}
+
+# Pseudo Tiled & tiled mode
+super + {p,t}
+    bspc node -t {pseudo_tiled,tiled}
+
+# Set the node flags
+super + ctrl + {m,x,y,z}
+	bspc node -g {marked,locked,sticky,private}
+
+# Send the window to another edge of the screen
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
+# Change focus to next window, including floating window
+alt + {_,shift + }Tab
+	bspc node -f {next.local,prev.local}
+
+# Switch workspace
+ctrl + alt + {Left,Right}
+	bspc desktop -f {prev.local,next.local}
+
+# Switch to last opened workspace
+super + {Tab,grave}
+	bspc {node,desktop} -f last
+
+# Send focused window to another workspace
+super + {_,ctrl + }{1-5}
+	bspc {desktop -f,node -d} '^{1-5}'
+
+# Send focused window to another workspace
+super + {shift +, alt +}{1-5}
+	bspc {desktop -f,node -d} '^{6-9}'
+
+# Expanding windows
+super + alt + {Left,Right,Up,Down}
+	bspc node -z {left -20 0,right 20 0,top 0 -20,bottom 0 20}
+	
+## Shrinking windows
+super + ctrl + {Left,Right,Up,Down}
+	bspc node -z {left 20 0,right -20 0,top 0 20,bottom 0 -20}
+	
+## Move floating windows
+alt + shift + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# swap the current node and the biggest node
+super + g
+	bspc node -s biggest
+
+# focus the node in the given direction
+super + {Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
