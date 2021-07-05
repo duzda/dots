@@ -13,7 +13,7 @@
 - firefox
 - thunar
 - vscode
-- deezer-unofficial-plazer
+- deezer-unofficial-player
 - scrot
 - redshift
 - betterlockscreen
