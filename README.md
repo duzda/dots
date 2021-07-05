@@ -13,10 +13,10 @@
 - firefox
 - thunar
 - vscode
-- deezer-unofficial-player
+- deezer-unofficial-player https://snapcraft.io/install/deezer-unofficial-player/arch#install
 - scrot
 - redshift
 - betterlockscreen
 
 ## WARNING
-**chmod +x bspmw & scripts folder**
+**chmod +x bspmw & scripts folder & all other scripts**
