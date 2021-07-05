@@ -1,17 +1,19 @@
 # my_dots
 
-WM: BSPWM
-DEPENDENCIES:
+## WM: BSPWM
 
-SOFT:
-alacritty
-firefox
-thunar
-vscode
-deezer-unofficial-plazer
-scrot
-redshift
+## DEPENDENCIES:
 
-HARD:
-rofi
-betterlockscreen
+### HARD:
+- rofi
+- https://github.com/adi1090x/rofi
+
+### SOFT:
+- alacritty
+- firefox
+- thunar
+- vscode
+- deezer-unofficial-plazer
+- scrot
+- redshift
+- betterlockscreen
