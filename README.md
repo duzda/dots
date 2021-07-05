@@ -17,3 +17,6 @@
 - scrot
 - redshift
 - betterlockscreen
+
+## WARNING
+**chmod +x scripts folder**
