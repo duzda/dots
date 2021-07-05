@@ -19,4 +19,4 @@
 - betterlockscreen
 
 ## WARNING
-**chmod +x scripts folder**
+**chmod +x bspmw & scripts folder**
