@@ -1,6 +1,6 @@
 # dots
 
-WM: BSPWM
+WM: BSPWM  
 LOGIN: SDDM
 
 # DEPENDENCIES:
