@@ -25,3 +25,6 @@ SOFT:
 **chmod +x bspmw & scripts folder & all other scripts**
 
 bonus folder is outside of the .config folder
+
+TODO:
+update bspwm folder
