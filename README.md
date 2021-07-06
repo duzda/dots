@@ -1,14 +1,16 @@
 # dots
 
-## WM: BSPWM
+WM: BSPWM
+LOGIN: SDDM
 
-## DEPENDENCIES:
+# DEPENDENCIES:
 
-### HARD:
+HARD:
 - rofi
-- https://github.com/adi1090x/rofi
+- polybar
+- https://github.com/adi1090x/polybar-themes
 
-### SOFT:
+SOFT:
 - alacritty
 - firefox
 - thunar
@@ -17,6 +19,7 @@
 - scrot
 - redshift
 - betterlockscreen
+- use custom discord
 
-## WARNING
+# WARNING
 **chmod +x bspmw & scripts folder & all other scripts**
