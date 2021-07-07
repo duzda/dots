@@ -14,7 +14,7 @@ super + w
 	firefox
 
 super + d
-	~/.config/rofi/launchers/text/launcher.sh
+	~/.config/polybar/colorblocks/scripts/launcher.sh
 
 super + shift + d # fullscreen - not implemented
 	rofi -show drun
@@ -34,7 +34,7 @@ super + l
 super + {_,shift + }q
 	bspc node -{c,k}
 
-super + space
+super + shift + space
 	~/.config/scripts/toggle_kb
 
 super + Escape
@@ -46,7 +46,7 @@ super + shift + r
 
 ## prompt lockscreen, logout, reboot, and shutdown not working
 alt + F4
-	~/.config/rofi/powermenu/powermenu.sh
+	~/.config/polybar/colorblocks/scripts/powermenu.sh
 
 ctrl + alt + F4
 	shutdown now
@@ -69,20 +69,16 @@ ctrl + Print
 shift + Print	
 	scrot -d 5 'Screenshot_%Y-%m-%d-%H-%M-%S.png' -e 'mv $f $$(xdg-user-dir PICTURES);' #; viewnior $$(xdg-user-dir PICTURES)/$f'
 	
-# Brighness control
-XF86MonBrightness{Up,Down}
-	backlight{-up,-down}
-	
 # Volume control
 XF86Audio{RaiseVolume,LowerVolume}
-	volume{-up,-down}
+	amixer set Master 5%{+,-}
 
 XF86AudioMute
 	amixer set Master toggle
 	
 # Music control
 XF86Audio{Next,Prev,Play,Stop}
-	mpc {next,prev,toggle,stop}
+	playerctl {next,prev,play,pause}
 
 ######################
 ### WINDOW MANAGER ###
@@ -145,7 +141,7 @@ super + {_,ctrl + }{1-5}
 
 # Send focused window to another workspace
 super + {shift +, alt +}{1-5}
-	bspc {desktop -f,node -d} '^{6-9}'
+	bspc {desktop -f,node -d} '^{6-9, 10}'
 
 # Expanding windows
 super + alt + {Left,Right,Up,Down}
