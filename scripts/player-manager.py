@@ -33,7 +33,6 @@ def on_metadata(player, metadata, manager):
     keys = metadata.keys()
     if 'xesam:artist' in keys and 'xesam:title' in keys:
         show_metadata(metadata['xesam:artist'][0], metadata['xesam:title'], 20, 30)
-        
 
 def init_player(name):
     # choose if you want to manage the player based on the name
@@ -46,8 +45,6 @@ def init_player(name):
             show_text(ONLINE_TEXT)
         else:
             show_metadata(player.get_artist(), player.get_title(), 20, 30)
-    elif not running:
-        show_text(OFFLINE_TEXT)
 
 def on_name_appeared(manager, name):
     init_player(name)
