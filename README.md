@@ -1,4 +1,4 @@
-# dots
+Probably won't work for you out of the box, although feel free to get some inspiration :)
 
 WM: BSPWM  
 LOGIN: SDDM
@@ -24,7 +24,4 @@ SOFT:
 # WARNING
 **chmod +x bspmw & scripts folder & all other scripts**
 
-bonus folder is outside of the .config folder
-
-TODO:
-update bspwm folder
+bonus folder is outside of the .config folder in / directory
