@@ -1,6 +1,6 @@
 Probably won't work for you out of the box, although feel free to get some inspiration :)
 
-OS: Arcolinux
+OS: Arcolinux  
 WM: BSPWM  
 LOGIN: SDDM
 
