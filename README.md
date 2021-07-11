@@ -4,7 +4,7 @@ OS: Arcolinux
 WM: BSPWM  
 LOGIN: SDDM
 
-Cool wallpapers: https://wallhaven.cc
+Cool wallpapers: https://wallhaven.cc  
 Icons: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 
 # DEPENDENCIES:
