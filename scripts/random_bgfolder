@@ -1,0 +1,4 @@
+#! /bin/bash
+
+BGFOLDER=`shuf -i 1-2 -n 1`
+feh --bg-fill --randomize ~/Desktop/$BGFOLDER/* --bg-fill --randomize ~/Desktop/$BGFOLDER/*

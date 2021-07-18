@@ -19,9 +19,11 @@ $HOME/.config/polybar/launch.sh --colorblocks &
 #change your keyboard if you need it
 #setxkbmap -layout be
 
+~/.config/scripts/random_bgfolder
 #Some ways to set your wallpaper besides variety or nitrogen
 #feh --bg-scale ~/.config/bspwm/wall.png &
-feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
+#feh --bg-fill /usr/share/backgrounds/arcolinux/arco-wallpaper.jpg &
+#feh --bg-fill --randomize ~/Desktop/1/* --bg-fill --randomize ~/Desktop/1/*
 #feh --randomize --bg-fill ~/Képek/*
 #feh --randomize --bg-fill ~/Dropbox/Apps/Desktoppr/*
 

@@ -10,10 +10,6 @@ gi.require_version("Playerctl", "2.0")
 
 from gi.repository import Playerctl, GLib
 
-manager = Playerctl.PlayerManager()
-
-running = False
-
 def show_text(text, **kwargs):
     print(text, **(kwargs or {}))
     sys.stdout.flush()
@@ -53,13 +49,17 @@ def on_player_vanished(manager, player):
     show_text(OFFLINE_TEXT)
     running = False
 
-show_text(OFFLINE_TEXT)
+if __name__ == "__main__":
+    manager = Playerctl.PlayerManager()
+    running = False
 
-manager.connect('name-appeared', on_name_appeared)
-manager.connect('player-vanished', on_player_vanished)
+    show_text(OFFLINE_TEXT)
 
-for name in manager.props.player_names:
-    init_player(name)
+    manager.connect('name-appeared', on_name_appeared)
+    manager.connect('player-vanished', on_player_vanished)
 
-main = GLib.MainLoop()
-main.run()
+    for name in manager.props.player_names:
+        init_player(name)
+
+    main = GLib.MainLoop()
+    main.run()

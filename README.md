@@ -23,9 +23,6 @@ SOFT:
 - scrot
 - redshift
 - betterlockscreen
-- use custom discord
-
-# WARNING
-**chmod +x bspmw & scripts folder & all other scripts**
+- use custom discord (webversion seems to be the best currently)
 
 bonus folder is outside of the .config folder in / directory
