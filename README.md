@@ -23,6 +23,6 @@ SOFT:
 - scrot
 - redshift
 - betterlockscreen
-- use custom discord (webversion seems to be the best currently)
+- use canary discord
 
 bonus folder is outside of the .config folder in / directory

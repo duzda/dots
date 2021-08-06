@@ -23,7 +23,7 @@ super + c
 	code
 
 super + n
-	discord
+	discord-canary
 
 super + m
 	deezer-unofficial-player
