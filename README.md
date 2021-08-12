@@ -23,6 +23,7 @@ SOFT:
 - scrot
 - redshift
 - betterlockscreen
-- use canary discord
+- canary discord
 
 bonus folder is outside of the .config folder in / directory
+Install script doesn't copy bonus folder contents
