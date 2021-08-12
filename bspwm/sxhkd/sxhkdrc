@@ -159,5 +159,5 @@ super + g
 	bspc node -s biggest.local
 
 # focus the node in the given direction
-super + {Left,Down,Up,Right}
+super + {_, shift +} {Left,Down,Up,Right}
 	bspc node -{f,s} {west,south,north,east}
