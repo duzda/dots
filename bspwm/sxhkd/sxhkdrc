@@ -11,7 +11,7 @@ super + e
 	thunar
 
 super + w
-	firefox
+	vivaldi-stable
 
 super + d
 	~/.config/polybar/colorblocks/scripts/launcher.sh

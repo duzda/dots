@@ -1,11 +1,11 @@
-Probably won't work for you out of the box, although feel free to get some inspiration :)
+Probably won't work for you out of the box, although feel free to get some inspiration :)  
 
 OS: Arcolinux  
 WM: BSPWM  
-LOGIN: SDDM
+LOGIN: SDDM  
 
 Cool wallpapers: https://wallhaven.cc  
-Icons: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+Icons: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme  
 
 # DEPENDENCIES:
 
@@ -16,7 +16,7 @@ HARD:
 
 SOFT:
 - alacritty
-- firefox
+- vivaldi
 - thunar
 - vscode
 - deezer-unofficial-player https://snapcraft.io/install/deezer-unofficial-player/arch#install
@@ -25,5 +25,5 @@ SOFT:
 - betterlockscreen
 - canary discord
 
-bonus folder is outside of the .config folder in / directory
-Install script doesn't copy bonus folder contents
+bonus folder is outside of the .config folder in / directory  
+Install script doesn't copy bonus folder contents, neither does it copy vivaldi profile  
