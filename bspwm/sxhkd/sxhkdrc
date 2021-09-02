@@ -79,6 +79,10 @@ XF86AudioMute
 XF86Audio{Next,Prev,Play}
 	playerctl {next,previous,play-pause}
 
+# Replay song
+ctrl + shift + F7
+	playerctl position 0
+
 ######################
 ### WINDOW MANAGER ###
 ######################
