@@ -85,10 +85,10 @@ alt + F7
 
 # Playerctl volume
 alt + F10
-	playerctl volume 5-
+	playerctl volume 0.05-
 
 alt + F11
-	playerctl volume 5+
+	playerctl volume 0.05+
 
 ######################
 ### WINDOW MANAGER ###
