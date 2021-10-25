@@ -83,6 +83,13 @@ XF86Audio{Next,Prev,Play}
 alt + F7
 	playerctl position 0
 
+# Playerctl volume
+alt + F10
+	playerctl volume 5-
+
+alt + F11
+	playerctl volume 5+
+
 ######################
 ### WINDOW MANAGER ###
 ######################
