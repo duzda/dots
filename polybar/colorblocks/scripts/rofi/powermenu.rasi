@@ -109,6 +109,8 @@ element-icon {
 }
 
 element-text {
+    background-color:               inherit;
+    text-color:                     inherit;
     expand:                         true;
     horizontal-align:               0;
     vertical-align:                 0.5;
