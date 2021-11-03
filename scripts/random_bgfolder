@@ -1,4 +1,10 @@
 #!/bin/bash
 
 BGFOLDER=`shuf -i 1-2 -n 1`
-feh --bg-fill --randomize ~/Desktop/$BGFOLDER/* --bg-fill --randomize ~/Desktop/$BGFOLDER/*
+twofiles="$(find * -print | shuf -n2)"
+
+set -o noglob
+IFS=$'\n' bgfiles=($twofiles)
+set +o noglob
+
+feh --bg-fill ${bgfiles[0]} --bg-fill ${bgfiles[1]}
