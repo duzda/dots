@@ -9,17 +9,17 @@ Icons: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 
 # DEPENDENCIES:
 
-HARD:
 - rofi
 - polybar
 - https://github.com/adi1090x/polybar-themes
-
-SOFT:
+- zsh
+- https://github.com/ohmyzsh/ohmyzsh
+- https://github.com/romkatv/powerlevel10k
 - alacritty
 - vivaldi
 - thunar
 - vscode
-- deezer-unofficial-player https://snapcraft.io/install/deezer-unofficial-player/arch#install
+- https://github.com/duzda/deezer-enhanced
 - scrot
 - redshift
 - betterlockscreen
