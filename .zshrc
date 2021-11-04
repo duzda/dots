@@ -1,4 +1,4 @@
-neofetch
+fm6000 -c blue -f /usr/local/bin/penguin.txt
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
