@@ -15,6 +15,8 @@ Icons: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 - zsh
 - https://github.com/ohmyzsh/ohmyzsh
 - https://github.com/romkatv/powerlevel10k
+- https://gitlab.com/dwt1/shell-color-scripts
+- https://github.com/anhsirk0/fetch-master-6000
 - alacritty
 - vivaldi
 - thunar
