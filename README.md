@@ -17,7 +17,6 @@ Cool wallpapers: https://wallhaven.cc
 # SHOWCASE
 ![Screenshot_2021-11-14-09-43-55](https://user-images.githubusercontent.com/25201406/141674053-fa13fa7b-c4e9-489c-a850-41d8f2c1980f.png)
 
-
 # DEPENDENCIES:
 - rofi
 - polybar
@@ -37,5 +36,5 @@ Cool wallpapers: https://wallhaven.cc
 - betterlockscreen
 - canary discord
 
-bonus folder is outside of the .config folder in / directory  
-Install script doesn't copy bonus folder contents, neither does it copy vivaldi profile  
+.local folder is outside of the .config folder in / directory  
+Install script doesn't copy .local folder contents, neither does it copy vivaldi profile  
