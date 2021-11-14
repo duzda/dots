@@ -4,11 +4,21 @@ OS: Arcolinux
 WM: BSPWM  
 LOGIN: SDDM  
 
+Cursor: Adwaita  
+Font: Roboto Condensed Light 11  
+Fallback(Default) Icons: https://www.gnome-look.org/p/1425426  
+Icons: https://www.gnome-look.org/p/1305251  
+GTK-Theme: Slightly edited merge of multiple themes  
+https://www.gnome-look.org/p/1619506  
+https://www.gnome-look.org/p/1099856 Dracula pink accent  
+
 Cool wallpapers: https://wallhaven.cc  
-Icons: https://github.com/PapirusDevelopmentTeam/papirus-icon-theme  
+
+# SHOWCASE
+![Screenshot_2021-11-14-09-43-55](https://user-images.githubusercontent.com/25201406/141674053-fa13fa7b-c4e9-489c-a850-41d8f2c1980f.png)
+
 
 # DEPENDENCIES:
-
 - rofi
 - polybar
 - https://github.com/adi1090x/polybar-themes
