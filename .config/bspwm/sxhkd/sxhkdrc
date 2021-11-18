@@ -54,15 +54,15 @@ ctrl + alt + F4
 
 # Take a screenshot
 Print
-    maim -u | tee ~/Pictures/scrot/Screenshot_$(strftime %Y-%m-%d-%H-%M-%S).png | xclip -selection clipboard -t image/png
+    maim -u | tee ~/Pictures/scrot/Screenshot_$(date +"%Y-%m-%d-%H-%M-%S").png | xclip -selection clipboard -t image/png
 
 # Take current window
 alt + Print	
-    maim -ui "$(xdotool getactivewindow)" | tee ~/Pictures/scrot/Screenshot_$(strftime %Y-%m-%d-%H-%M-%S).png | xclip -selection clipboard -t image/png
+    maim -ui "$(xdotool getactivewindow)" | tee ~/Pictures/scrot/Screenshot_$(date +"%Y-%m-%d-%H-%M-%S").png | xclip -selection clipboard -t image/png
 
 # Take window
 ctrl + Print	
-    maim -su | tee ~/Pictures/scrot/Screenshot_$(strftime %Y-%m-%d-%H-%M-%S).png | xclip -selection clipboard -t image/png
+    maim -su | tee ~/Pictures/scrot/Screenshot_$(date +"%Y-%m-%d-%H-%M-%S").png | xclip -selection clipboard -t image/png
 
 # Volume control
 XF86Audio{RaiseVolume,LowerVolume}
