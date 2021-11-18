@@ -15,7 +15,7 @@ https://www.gnome-look.org/p/1099856 Dracula pink accent
 Cool wallpapers: https://wallhaven.cc  
 
 # SHOWCASE
-![Screenshot_2021-11-14-09-43-55](https://user-images.githubusercontent.com/25201406/141674053-fa13fa7b-c4e9-489c-a850-41d8f2c1980f.png)
+![Screenshot_2021-11-14-09-43-55](https://user-images.githubusercontent.com/25201406/142454972-d95f800b-3c5d-47b3-b9f5-5f2d3063387d.png)
 
 # DEPENDENCIES:
 - rofi
