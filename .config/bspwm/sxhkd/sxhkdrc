@@ -28,7 +28,7 @@ super + n
 super + m
 	deezer-enhanced
 
-super + l
+super + l + o
 	betterlockscreen -l
 
 super + {_,shift + }q
