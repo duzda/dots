@@ -3,9 +3,7 @@
 read -p "Quick Update (Y/N) should be only used by my lazy ass: " quick
 if [[ $quick == [yY] || $quick == [yY][eE][sS] ]]
 then
-    cp -uv ./.zshrc ~/
     cp -ruv ./.config ~/
-    cp -ruv ./.themes ~/
     exit 0
 fi
 
