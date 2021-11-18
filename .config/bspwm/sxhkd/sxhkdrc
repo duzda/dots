@@ -110,7 +110,7 @@ super + Escape
 	pkill -USR1 -x sxhkd
 
 # Split horizontal, vertical or cancel
-super + {h,v,b}
+super + {n,v,b}
 	bspc node -p {east,south,cancel}
 
 # Preselect the ratio
@@ -130,7 +130,7 @@ super + ctrl + {m,x,y,z}
 	bspc node -g {marked,locked,sticky,private}
 
 # Send the window to another edge of the screen
-super + {_,shift + }{Left,Down,Up,Right}
+super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
 # Change focus to next window, including floating window
@@ -138,7 +138,7 @@ alt + {_,shift + }Tab
 	bspc node -f {next.local,prev.local}
 
 # Switch workspace
-ctrl + alt + {Left,Right}
+ctrl + alt + {h,l}
 	bspc desktop -f {prev.local,next.local}
 
 # Switch to last opened workspace
@@ -154,15 +154,15 @@ super + {shift +, alt +}{1-5}
 	bspc {desktop -f,node -d} '^{6-9, 10}'
 
 # Expanding windows
-super + alt + {Left,Right,Up,Down}
+super + alt + {h,l,k,j}
 	bspc node -z {left -20 0,right 20 0,top 0 -20,bottom 0 20}
 	
 ## Shrinking windows
-super + ctrl + {Left,Right,Up,Down}
+super + ctrl + {h,l,k,j}
 	bspc node -z {left 20 0,right -20 0,top 0 20,bottom 0 -20}
 	
 ## Move floating windows
-alt + shift + {Left,Down,Up,Right}
+alt + shift + {h,j,k,l}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # swap the current node and the biggest node
@@ -170,5 +170,5 @@ super + g
 	bspc node -s biggest.local
 
 # focus the node in the given direction
-super + {_, shift +} {Left,Down,Up,Right}
+super + {_, shift +} {h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
