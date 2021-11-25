@@ -29,7 +29,7 @@ super + m
 	deezer-enhanced
 
 super + l + o
-	betterlockscreen -l
+    setxkbmap us && betterlockscreen -l
 
 super + {_,shift + }q
 	bspc node -{c,k}
@@ -129,12 +129,18 @@ super + ctrl + {m,x,y,z}
 super + {_,shift + }{h,j,k,l}
 	bspc node -{f,s} {west,south,north,east}
 
+super + {_,shift + }{Left,Down,Up,Right}
+	bspc node -{f,s} {west,south,north,east}
+
 # Change focus to next window, including floating window
 alt + {_,shift + }Tab
 	bspc node -f {next.local,prev.local}
 
 # Switch workspace
 ctrl + alt + {h,l}
+	bspc desktop -f {prev.local,next.local}
+
+ctrl + alt + {Left,Right}
 	bspc desktop -f {prev.local,next.local}
 
 # Switch to last opened workspace
@@ -153,12 +159,21 @@ super + {shift +, alt +}{1-5}
 super + alt + {h,l,k,j}
 	bspc node -z {left -20 0,right 20 0,top 0 -20,bottom 0 20}
 	
+super + alt + {Left,Right,Up,Down}
+	bspc node -z {left -20 0,right 20 0,top 0 -20,bottom 0 20}
+
 ## Shrinking windows
 super + ctrl + {h,l,k,j}
 	bspc node -z {left 20 0,right -20 0,top 0 20,bottom 0 -20}
 	
+super + ctrl + {Left,Right,Up,Down}
+	bspc node -z {left 20 0,right -20 0,top 0 20,bottom 0 -20}
+
 ## Move floating windows
 alt + shift + {h,j,k,l}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+alt + shift + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 # swap the current node and the biggest node
@@ -167,4 +182,7 @@ super + g
 
 # focus the node in the given direction
 super + {_, shift +} {h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+super + {_, shift +} {Left,Down,Up,Right}
 	bspc node -{f,s} {west,south,north,east}
