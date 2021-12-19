@@ -32,7 +32,7 @@ def on_metadata(player, metadata, manager):
 
 def init_player(name):
     # choose if you want to manage the player based on the name
-    if name.name in ['Deezer', 'DeadBeeF']:
+    if name.name in ['Deezer', 'DeaDBeeF']:
         running = True
         player = Playerctl.Player.new_from_name(name)
         player.connect('metadata', on_metadata, manager)
