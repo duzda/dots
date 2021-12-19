@@ -26,7 +26,7 @@ super + n
 	discord-canary
 
 super + m
-	deezer-enhanced
+	deadbeef
 
 super + l + o
     setxkbmap us && betterlockscreen -l
