@@ -20,8 +20,6 @@ Plugin 'ycm-core/YouCompleteMe'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
 Plugin 'itchyny/lightline.vim'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
 Plugin 'frazrepo/vim-rainbow'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'ntk148v/vim-horizon'
@@ -55,12 +53,13 @@ set laststatus=2
 
 " === YCM CONFIG ===
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " === COLOR BRACKETS CONFIG ===
 let g:rainbow_active = 1
 
 " === MAPPINGS ===
 
-map ; :Files<CR>
 map <C-o> :NERDTreeToggle<CR>
 
