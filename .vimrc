@@ -61,5 +61,5 @@ let g:rainbow_active = 1
 
 " === MAPPINGS ===
 
-map <C-o> :NERDTreeToggle<CR>
+map <C-O> :NERDTreeToggle<CR>
 
